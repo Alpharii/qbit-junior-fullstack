@@ -1,7 +1,17 @@
+"use client";
 import React from 'react';
 import Image from 'next/image';
+import MagicButton from './MagicButton';
 
 const About = () => {
+  const handleScroll = (event: React.MouseEvent) => {
+    event.preventDefault();
+    const target = document.querySelector('#bootcamp');
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
     <section id="about" className="bg-slate-600 text-black -mt-4 pb-20">
       <div className="container mx-auto flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-12">
@@ -24,8 +34,11 @@ const About = () => {
             Bootcamp Full Stack JavaScript & Data Science bisa bayar setelah
             lulus hingga dapat kerja!
           </h2>
-          <button className="mt-4 bg-indigo-600 text-white font-semibold py-2 px-6 rounded-md hover:bg-gray-900 transition duration-300">
-            Learn More
+          <button onClick={handleScroll}>
+          <MagicButton
+            title="Daftar Sekarang"
+            position="right"
+          />
           </button>
         </div>
       </div>
