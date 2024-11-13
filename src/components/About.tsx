@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const About = () => {
   return (
-    <section id="about" className="bg-blue-500 text-black -mt-4">
+    <section id="about" className="bg-slate-600 text-black -mt-4 pb-32">
       <div className="container mx-auto flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-12">
         {/* Image Section */}
         <div className="flex justify-center md:w-1/2">
@@ -17,9 +17,9 @@ const About = () => {
         </div>
 
         {/* Text Section */}
-        <div className="text-center md:text-left md:w-1/2 space-y-4">
+        <div className="text-center md:text-left md:w-1/2 space-y-4 text-white">
           <h1 className="text-4xl font-bold">About Us</h1>
-          <h2 className="text-lg md:text-xl text-black leading-relaxed">
+          <h2 className="text-lg md:text-xl text-white leading-relaxed">
             Wujudkan impian jadi Programmer tanpa pusing biaya. Belajar di
             Bootcamp Full Stack JavaScript & Data Science bisa bayar setelah
             lulus hingga dapat kerja!
