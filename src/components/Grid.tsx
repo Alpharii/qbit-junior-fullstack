@@ -88,7 +88,10 @@ const Grid = () => {
   ];
 
   return (
-    <div className="flex flex-wrap justify-center bg-black py-10 md:py-5" id='bootcamp'>
+    <div
+      className="flex flex-wrap justify-center bg-black py-10 md:py-5"
+      id="bootcamp"
+    >
       {features.map((feature, index) => (
         <FeatureBox
           key={index}

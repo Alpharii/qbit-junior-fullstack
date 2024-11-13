@@ -1,4 +1,4 @@
-"use client";
+'use client';
 import Image from 'next/image';
 import { TextGenerateEffect } from './ui/TextGeneratedEffect';
 import MagicButton from './MagicButton';
@@ -25,11 +25,8 @@ const Hero = () => {
           1.000+ perusahaan hiring partner Purwadhika yang tersebar di Asia.
         </h2>
         <button onClick={handleScroll}>
-          <MagicButton
-            title="Get Started"
-            position="right"
-          />
-          </button>
+          <MagicButton title="Get Started" position="right" />
+        </button>
       </div>
       <div className="mt-8 md:mt-0 md:ml-8 md:w-1/2 flex justify-center">
         <Image

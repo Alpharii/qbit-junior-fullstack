@@ -1,4 +1,4 @@
-"use client";
+'use client';
 import React from 'react';
 import Image from 'next/image';
 import MagicButton from './MagicButton';
@@ -35,10 +35,7 @@ const About = () => {
             lulus hingga dapat kerja!
           </h2>
           <button onClick={handleScroll}>
-          <MagicButton
-            title="Daftar Sekarang"
-            position="right"
-          />
+            <MagicButton title="Daftar Sekarang" position="right" />
           </button>
         </div>
       </div>
