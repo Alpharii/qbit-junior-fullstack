@@ -10,7 +10,7 @@ import WavySecond from '@/components/WavySecons';
 
 export default function Home() {
   return (
-    <div>
+    <div className='overflow-hidden'>
       <FloatingNav
         navItems={[
           { name: 'About', link: '#about' },
