@@ -3,7 +3,7 @@ import { TextGenerateEffect } from './ui/TextGeneratedEffect';
 
 const Hero = () => {
   return (
-    <div className="bg-black text-white flex flex-col md:flex-row items-center justify-center p-8 md:p-16">
+    <div className="bg-black text-white flex flex-col md:flex-row items-center justify-center p-8 md:p-16 pt-32">
       <div className="text-center md:text-left md:w-1/2 space-y-4">
         <TextGenerateEffect
           words="Kuasai Skill Digital Dan Raih Suksesmu"
