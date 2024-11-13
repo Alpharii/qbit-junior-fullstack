@@ -18,20 +18,20 @@ const Navbar = () => {
         </MenuItem>
       </a>
       <a href="#products">
-      <MenuItem setActive={setActive} active={active} item="Products">
-        <ProductItem
-          title="Product 1"
-          description="Description of Product 1"
-          href="#product-1"
-          src="/images/product-1.jpg"
-        />
-        <ProductItem
-          title="Product 2"
-          description="Description of Product 2"
-          href="#product-2"
-          src="/images/product-2.jpg"
-        />
-      </MenuItem>
+        <MenuItem setActive={setActive} active={active} item="Products">
+          <ProductItem
+            title="Product 1"
+            description="Description of Product 1"
+            href="#product-1"
+            src="/images/product-1.jpg"
+          />
+          <ProductItem
+            title="Product 2"
+            description="Description of Product 2"
+            href="#product-2"
+            src="/images/product-2.jpg"
+          />
+        </MenuItem>
       </a>
       <a href="#contact">
         <MenuItem setActive={setActive} active={active} item="Contact">
