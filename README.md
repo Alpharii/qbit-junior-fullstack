@@ -1,4 +1,4 @@
-# Coding Camp Academy - Technical Test
+# Qbit - Technical Test
 
 Website yang dibangun sebagai bagian dari Junior Fullstack - Technical Test, memperkenalkan kelas online coding melalui Coding Camp Academy. Proyek ini mencakup tiga kasus utama yang diselesaikan menggunakan teknologi seperti Next.js, Tailwind CSS, TypeScript, dan Framer Motion.
 
