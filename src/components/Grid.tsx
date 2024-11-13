@@ -3,9 +3,10 @@ import React from 'react';
 type FeatureBoxProps = {
   title: string;
   description: string;
+  imageUrl?: string; // Menambahkan prop untuk image
 };
 
-const FeatureBox = ({ title, description }: FeatureBoxProps) => {
+const FeatureBox = ({ title, description, imageUrl }: FeatureBoxProps) => {
   return (
     <div className="p-4 max-w-sm">
       <div className="flex rounded-lg h-full dark:bg-gray-800 bg-teal-400 p-8 flex-col">
@@ -27,6 +28,16 @@ const FeatureBox = ({ title, description }: FeatureBoxProps) => {
             {title}
           </h2>
         </div>
+
+        {/* Gambar yang ditambahkan di sini */}
+        {imageUrl && (
+          <img
+            src={imageUrl}
+            alt={title}
+            className="m-4 p-4 w-10/12 h-auto object-cover rounded-lg"
+          />
+        )}
+
         <div className="flex flex-col justify-between flex-grow">
           <p className="leading-relaxed text-base text-white dark:text-gray-300">
             {description}
@@ -57,29 +68,33 @@ const FeatureBox = ({ title, description }: FeatureBoxProps) => {
 const Grid = () => {
   const features = [
     {
-      title: 'Feature 1',
+      title: 'Bootcamp Fullstack Developer Javascript MERN',
       description:
-        'Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.',
+        'Jadi Programmer handal dalam 16 minggu, belajar secara intensif untuk mempersiapkan kamu menjadi talenta digital siap kerja. Daftar Beasiswa JADIAN25 sekarang dan dapatkan potongan hingga Rp20 Juta. Kuota terbatas!',
+      imageUrl: './exp1.svg', // Contoh URL gambar
     },
     {
-      title: 'Feature 2',
+      title: 'Bootcamp Backend Developer Golang',
       description:
-        'Lorem ipsum dolor sit amet. In quos laboriosam non neque eveniet 33 nihil molestias. Rem perspiciatis iure ut laborum inventore et maxime amet.',
+        'Jadi Programmer handal dalam 16 minggu, belajar secara intensif untuk mempersiapkan kamu menjadi talenta digital siap kerja. Daftar Beasiswa JADIAN25 sekarang dan dapatkan potongan hingga Rp20 Juta. Kuota terbatas!',
+      imageUrl: './exp4.svg', // Contoh URL gambar
     },
     {
-      title: 'Feature 3',
+      title: 'Bootcamp Data Science & Data Analyst',
       description:
-        'Lorem ipsum dolor sit amet. In quos laboriosam non neque eveniet 33 nihil molestias. Rem perspiciatis iure ut laborum inventore et maxime amet.',
+        'Jadi Programmer handal dalam 16 minggu, belajar secara intensif untuk mempersiapkan kamu menjadi talenta digital siap kerja. Daftar Beasiswa JADIAN25 sekarang dan dapatkan potongan hingga Rp20 Juta. Kuota terbatas!',
+      imageUrl: './exp3.svg', // Contoh URL gambar
     },
   ];
 
   return (
-    <div className="flex flex-wrap justify-center bg-black">
+    <div className="flex flex-wrap justify-center bg-black py-10 md:py-5">
       {features.map((feature, index) => (
         <FeatureBox
           key={index}
           title={feature.title}
           description={feature.description}
+          imageUrl={feature.imageUrl}
         />
       ))}
     </div>

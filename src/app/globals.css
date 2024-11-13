@@ -20,6 +20,30 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-background {
-  background-color: #0066cc;
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll-left 180s linear infinite; /* Sesuaikan sesuai arah dan durasi */
+}
+
+@layer utilities {
+  .heading {
+    @apply font-bold text-4xl md:text-5xl text-center;
+  }
 }

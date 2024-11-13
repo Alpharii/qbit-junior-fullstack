@@ -3,16 +3,16 @@ import Image from 'next/image';
 
 const About = () => {
   return (
-    <section id="about" className="bg-slate-600 text-black -mt-4 pb-32">
+    <section id="about" className="bg-slate-600 text-black -mt-4 pb-20">
       <div className="container mx-auto flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-12">
         {/* Image Section */}
         <div className="flex justify-center md:w-1/2">
           <Image
-            src="/about.png"
+            src="/people-coding.jpg"
             alt="hero image"
             width={400}
             height={300}
-            className="rounded-lg"
+            className="rounded-lg w-4/6"
           />
         </div>
 

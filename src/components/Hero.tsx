@@ -21,7 +21,13 @@ const Hero = () => {
         </a>
       </div>
       <div className="mt-8 md:mt-0 md:ml-8 md:w-1/2 flex justify-center">
-        <Image src="/heroes.png" alt="hero image" width={500} height={300} />
+        <Image
+          src="/pyro.jpg"
+          alt="hero image"
+          width={500}
+          height={300}
+          className="rounded-lg w-8/12"
+        />
       </div>
     </div>
   );
