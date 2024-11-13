@@ -33,7 +33,6 @@ const FeatureBox = ({ title, description, imageUrl }: FeatureBoxProps) => {
         {imageUrl && (
           <img
             src={imageUrl}
-            alt={title}
             className="m-4 p-4 w-10/12 h-auto object-cover rounded-lg"
           />
         )}

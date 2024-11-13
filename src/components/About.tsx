@@ -29,7 +29,7 @@ const About = () => {
         {/* Text Section */}
         <div className="text-center md:text-left md:w-1/2 space-y-4 text-white">
           <h1 className="text-4xl font-bold">About Us</h1>
-          <h2 className="text-lg md:text-xl text-white leading-relaxed">
+          <h2 className="text-lg md:text-xl text-white leading-relaxed p-4 md:p-0">
             Wujudkan impian jadi Programmer tanpa pusing biaya. Belajar di
             Bootcamp Full Stack JavaScript & Data Science bisa bayar setelah
             lulus hingga dapat kerja!
